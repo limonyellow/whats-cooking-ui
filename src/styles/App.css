@@ -1,0 +1,77 @@
+:root {
+  --dark-gray: #121212;
+  /* --primary: #778f9b; */
+  /* --primary: #ff9800; */
+  --primary: #232f34;
+  --primary-ligth: #a6bfcc;
+  --primary-dark: #4a626d;
+  --primary-dark-07: rgba(74, 98, 109, 1);
+  /* --primary-text: #000000; */
+  /* --primary-text: #e0e0e0; */
+  --primary-text: rgba(224, 224, 224, 0.87);
+  --primary-text-medium: rgba(224, 224, 224, 0.6);
+  --primary-text-disabled: rgba(224, 224, 224, 0.38);
+
+  /* --secondary: #f9aa33; */
+  --secondary: #f9a825;
+  --secondary-01: rgba(249, 168, 37, 0.1);
+  --secondary-03: rgba(249, 168, 37, 0.3);
+
+  --secondary-light: #ffd95a;
+  --secondary-dark: #c17900;
+  /* --secondary-text: #000000; */
+  --secondary-text: rgba(0, 0, 0, 0.87);
+  --secondary-text-medium: rgba(0, 0, 0, 0.6);
+  --secondary-text-disabled: rgba(0, 0, 0, 0.38);
+
+  /* --secondary: #616161; */
+  /* --secondary-light: #8e8e8e; */
+  /* --secondary-dark: #373737; */
+  /* --secondary-text: #ffffff; */
+
+  /* --back-color: #e0e0e0; */
+  /* --back-color: white; */
+  --back-color: #ebebeb;
+
+  --light-blue: #3282b8;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: local("Montserrat-Regular"),
+    url(./fonts/Montserrat-Regular.ttf) format("ttf");
+}
+
+.App {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+
+  background-color: var(--back-color);
+  color: var(--secondary-text);
+}
+
+.App-header {
+  text-align: center;
+}
+
+.App-navbar {
+  /* display: flex; */
+  padding: none;
+  color: var(--primary-text);
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+}
+
+.App-main {
+  color: var(--secondary-text);
+}
+
+.App-fotter {
+  text-align: center;
+  padding-bottom: 1rem;
+  text-shadow: 0.2px 0.2px 1.5px#121212;
+}

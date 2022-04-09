@@ -1,0 +1,74 @@
+.search-main {
+  display: block;
+  min-height: 60vh;
+}
+
+.search-menu {
+  display: none;
+}
+
+.search-title {
+  display: block;
+  text-decoration: none;
+  /* color: var(--primary-text); */
+  font-family: "Comic Sans MS";
+  font-size: 3.5rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 40%;
+  min-width: 17em;
+
+  border: none;
+  outline: none;
+
+  color: var(--secondary-text);
+  font-size: 1.3em;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 1em;
+  box-shadow: 0.5px 0.5px 2px black;
+  padding: 0.5em;
+  padding-left: 2em;
+  border: 0.1rem groove rgba(0, 0, 0, 0);
+
+  background-image: url("../icons/twotone_search_black_18dp.png");
+  background-position: 0.6em 0.6em;
+  background-repeat: no-repeat;
+
+  transition: width 0.4s ease-in-out;
+}
+
+.search-box .search-bar:hover {
+  border: 0.1rem groove rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0.5px 0.5px 5px black;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+
+  /* max-height: 50vh; */
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+
+  padding: 1em;
+  margin: 0.5em;
+  /* border: 0.1px solid black;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px black; */
+}

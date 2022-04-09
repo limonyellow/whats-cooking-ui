@@ -1,0 +1,62 @@
+.navbar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* padding-top: 0.5rem; */
+  /* padding-left: 1em; */
+  padding-right: 1em;
+
+  background-color: var(--primary);
+
+  box-shadow: 0px 0.5px 5px black;
+}
+
+.navbar-title {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-text);
+  font-family: "Montserrat-Regular", "Comic Sans MS";
+  font-weight: 500;
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 2em;
+
+  background-image: url("../icons/PinClipart.com_eating-spaghetti-clipart_2341655.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 1.8em;
+  background-position: 0.3em 0.2em;
+}
+
+.navbar-title:hover {
+  color: white;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar-menu-item {
+  float: left;
+}
+
+.navbar-menu-item a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-text);
+  text-align: center;
+  /* padding: 14px 16px; */
+  padding: 1rem 1rem 0.7rem 1rem;
+  /* padding-bottom: 0.7rem; */
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0);
+}
+
+.navbar-menu-item a:hover {
+  /* color: white; */
+  color: var(--secondary-light);
+  border-bottom: 0.1rem groove var(--secondary-light);
+}
