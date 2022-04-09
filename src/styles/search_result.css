@@ -1,0 +1,107 @@
+.search-result-link {
+  text-decoration: none;
+}
+
+.search-result {
+  margin: 0.5em;
+  border: 0.1px solid black;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px black;
+
+  background-color: var(--secondary-01);
+}
+
+.search-result:hover {
+  margin: 0.5em;
+  border: 0.1px solid black;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px black;
+
+  background-color: var(--secondary-03);
+}
+
+.search-result-top {
+  display: flex;
+  padding: 0.2em;
+  margin: none;
+
+  border-bottom: 0.1px groove black;
+  border-radius: 1px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0px 0.2px 0.1px black;
+  background-color: var(--primary-dark);
+
+  font-size: 0.9em;
+  color: var(--primary-text-medium);
+}
+
+.search-result-top .score {
+  display: block;
+  padding: 0em 0.5em 0em 1.5em;
+
+  background-image: url("../icons/baseline_stars_white_18dp.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 0.3em 0.2em;
+}
+
+.search-result-top .items-num {
+  display: block;
+  padding: 0em 0.5em 0em 1.5em;
+
+  background-image: url("../icons/baseline_find_in_page_white_18dp.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 0.3em 0.2em;
+}
+
+.search-result-top .appearances {
+  display: block;
+  padding: 0em 0.5em 0em 1.5em;
+
+  background-image: url("../icons/baseline_control_camera_white_18dp.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 0.3em 0.2em;
+}
+.search-result-main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.search-result-title {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: 500;
+}
+
+.search-result-title {
+  display: flexbox;
+  text-decoration: none;
+  color: var(--secondary-text);
+  font-size: 1.7em;
+}
+
+.search-result-link {
+  padding-bottom: 0.5em;
+}
+
+.search-result-link {
+  text-decoration: none;
+  color: var(--secondary-text);
+  font-size: 0.8rem;
+}
+
+.search-result-img {
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 1px; */
+  width: 15em;
+  height: 10em;
+  border: 1px solid var(--primary-dark);
+  border-radius: 4px;
+}
