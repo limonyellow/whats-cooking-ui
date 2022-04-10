@@ -12,12 +12,15 @@ function Search() {
     console.log(searchText);
     let response = "";
     try {
-      response = await axios.get("/search", {
-        params: {
-          q: searchText,
-          sourceid: 1,
-        },
-      });
+      response = await axios.get(
+        "https://whats-cooking-api-server.herokuapp.com/search",
+        {
+          params: {
+            q: searchText,
+            sourceid: 1,
+          },
+        }
+      );
     } catch (error) {
       console.error(error);
     }
