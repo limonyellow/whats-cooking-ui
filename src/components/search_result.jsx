@@ -22,7 +22,7 @@ function SearchResult(props) {
             target="_blank"
           >
             <div className="search-result-title">{props.data.title}</div>
-            <div className="search-result-link">{props.data.url}</div>
+            {/* <div className="search-result-link">{props.data.url}</div> */}
           </a>
         </div>
       </div>
