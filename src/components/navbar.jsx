@@ -12,9 +12,6 @@ function Navbar() {
         <li className="navbar-menu-item">
           <a href="search">Search</a>
         </li>
-        <li className="navbar-menu-item">
-          <a href="db">Data Base</a>
-        </li>
       </ul>
     </div>
 
