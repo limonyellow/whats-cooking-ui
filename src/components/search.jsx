@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/search.css";
-import "../styles/spinner_search_loader.css";
+import "../styles/search_loading_spinner.css";
 import axios from "axios";
 import SearchResult from "./search_result";
 
