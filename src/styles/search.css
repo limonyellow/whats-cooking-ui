@@ -21,7 +21,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 5vh;
+  padding-bottom: 0px;
 }
 
 .search-box .search-bar {

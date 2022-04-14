@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import "../styles/search.css";
+import "../styles/search_loading_spinner.css";
 import axios from "axios";
 import SearchResult from "./search_result";
 
 function Search() {
   const [searchText, setSearchText] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [resultData, setResultData] = useState([]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(searchText);
     let response = "";
+    setIsLoading(true);
     try {
       response = await axios.get(
         "https://whats-cooking-api-server.herokuapp.com/search",
@@ -24,6 +27,7 @@ function Search() {
     } catch (error) {
       console.error(error);
     }
+    setIsLoading(false);
     console.log("response:", response);
     console.log("response.data:", response.data);
     response.data.map((list) => console.log(list.title));
@@ -45,6 +49,16 @@ function Search() {
           ></input>
         </form>
       </div>
+      {isLoading ? (
+        <div class="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      ) : (
+        <div class="empty-ring"></div>
+      )}
       <div className="search-results">
         {resultData.map((list) => (
           <SearchResult data={list} />
